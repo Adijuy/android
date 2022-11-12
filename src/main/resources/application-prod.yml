@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: android
+  datasource:
+    driver-class-name:server: com.mysql.cj.jdbc.Driver
+    name: defaultDataSource
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=UTC
+    username: root
+    password: whzs
+mybatis:
+  mapper-locations: classpath:mappers/*xml
+  type-aliases-package: com.wh.android.mybatis.entity
+server:
+  port: 8081
+image:
+  path: /root/images/
