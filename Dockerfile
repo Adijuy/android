@@ -8,5 +8,5 @@ COPY pom.xml .
 COPY src ./src
 
 RUN mvn package -DskipTests
-
+RUN yum install cat
 CMD["java","-jar","/app/target/android-0.0.1-SNAPSHOT","--spring.profiles.active=prod"]
